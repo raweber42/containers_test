@@ -20,6 +20,8 @@ int		main(void)
 	printSize(vct);
 
 	vct.insert(vct.end(), lst.rbegin(), lst.rend());
+	vct.insert(vct.begin(), lst.rbegin(), lst.rend());
+	vct.insert(++(++vct.begin()), lst.rbegin(), lst.rend());
 	printSize(vct);
 	return (0);
 }
